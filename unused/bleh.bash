@@ -1,6 +1,5 @@
 #!/bin/bash
+echo "bleh.bash executed at $(date)" >> /tmp/bleh.log
 
-time=10
-sleep $time
 blueutil --disconnect "WH-XB910N"
 blueutil -p 0

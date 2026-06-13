@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>Label</key>
+    <string>com.userDev.sleepwatcher</string>
+
+  <key>StandardErrorPath</key>
+    <string>/tmp/sleepwatcher.err</string>
+  
+  <key>StandardOutPath</key>
+    <string>/tmp/sleepwatcher.out</string>
+
+    <key>ProgramArguments</key>
+      <array>
+        <string>/opt/homebrew/opt/sleepwatcher/sbin/sleepwatcher</string>
+        <string>-s</string>
+        <string>/Users/antonioba/Code/BluetoothDisconnect/sleeptrigger.sh</string>
+        <string>-w</string>
+        <string>/Users/antonioba/Code/BluetoothDisconnect/waketrigger.sh</string>
+      </array>
+    
+    <key>RunAtLoad</key>
+      <true/>
+  </dict>
+</plist>
